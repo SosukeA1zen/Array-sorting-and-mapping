@@ -9,9 +9,19 @@
     <h1 id="demo">
 
     </h1>
+    <h1 id="demo2">
+
+    </h1>
+
     <button onclick="asc()">ascending order</button>
     <button onclick="desc()">descending order</button>
     <script>
+        var numbers=[1,2,3,6]
+        function myfun(num){
+            return num*10
+        }
+        var newarry=numbers.map(myfun)
+        document.getElementById("demo2").innerHTML=newarry
         var points=[12,98,48,987,999999]
         document.getElementById("demo").innerHTML=points
         function asc(){
